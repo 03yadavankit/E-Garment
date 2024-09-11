@@ -1,18 +1,21 @@
-
 import axios from 'axios';
-const DEPLOYED='https://pear-poised-hen.cyclic.app/'
-const LOCALHOST='http://localhost:5454'
 
-export const API_BASE_URL = LOCALHOST;
+// Update to your deployed backend URL
+export const API_BASE_URL = 'https://e-garment.onrender.com';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
 });
 
+// Retrieve the JWT token from local storage (if available)
 const token = localStorage.getItem('jwt');
 
-api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+// Set the Authorization header for all requests if the token exists
+if (token) {
+  api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+}
 
+// Ensure POST requests use the 'application/json' content type
 api.defaults.headers.post['Content-Type'] = 'application/json';
 
 export default api;
