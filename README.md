@@ -62,5 +62,5 @@ To get started with the frontend development of E-Garment, follow these steps:
 
 ### Contributing
 
-Feel free to contribute to the project by submitting issues or pull requests. For more details on contributing, please refer to the `CONTRIBUTING.md` file.
+Feel free to contribute to the project by submitting issues or pull requests.
 ---
