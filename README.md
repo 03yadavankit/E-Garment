@@ -33,7 +33,7 @@ To get started with the frontend development of E-Garment, follow these steps:
 
     ```bash
     git clone [https://github.com/03yadavankit/E-Garment.git]
-    cd egarment-frontend
+    cd frontend
     ```
 
 2. **Install Dependencies:**
